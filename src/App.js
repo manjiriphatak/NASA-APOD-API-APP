@@ -1,5 +1,6 @@
 import "./App.css";
 import DisplayImage from "./DisplayImage";
+import LikeDislike from "./LikeDislike";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       </header>
       <main>
         <DisplayImage />
+        <LikeDislike />
       </main>
     </div>
   );
