@@ -24,7 +24,7 @@ html {
   background-color: rgba(229, 234, 236, 0.541);
 }
 .App {
-  min-height: 100vh;
+  min-height: 97vh;
   padding: 3rem 1rem;
   display: flex;
   flex-direction: column;

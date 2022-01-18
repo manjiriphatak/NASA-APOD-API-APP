@@ -15,8 +15,11 @@ function App() {
       </div>
       <footer>
         <p>
-          Responsive App built by <a>Manjiri Phatak</a> Open-sourced on{" "}
-          <a>Github</a> hosted on Netlify
+          Responsive App built by{" "}
+          <a href="https://www.linkedin.com/in/manjiriphatak/">
+            Manjiri Phatak
+          </a>{" "}
+          Open-sourced on <a href="">Github</a> hosted on Netlify
         </p>
       </footer>
     </div>
