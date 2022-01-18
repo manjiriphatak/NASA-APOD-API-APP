@@ -1,17 +1,15 @@
 import "./App.css";
 import DisplayImage from "./DisplayImage";
-import LikeDislike from "./LikeDislike";
 
 function App() {
   return (
     <div className="App">
-      <header>
+      <header className="heading">
         <h1>Spacetagram</h1>
         <p>Astronomical Picture of the Day by NASA's API</p>
       </header>
       <main>
         <DisplayImage />
-        <LikeDislike />
       </main>
     </div>
   );

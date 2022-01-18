@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import "./App.css";
+import { FaHeart } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
 
 export default function LikeDislike() {
   const [like, setLike] = useState(false);
@@ -11,7 +14,9 @@ export default function LikeDislike() {
 
   return (
     <div>
-      <button onClick={handleLike}>{like ? "❤️" : "🤍"}</button>
+      <button className="likeButton" onClick={handleLike}>
+        {like ? <FaHeart color="red" /> : <FaRegHeart color="grey" />}
+      </button>
     </div>
   );
 }

@@ -3,3 +3,73 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --heading-color: rgb(34, 73, 88);
+  --body-color: rgb(61, 61, 61);
+  --heading-font: "Montserrat", sans-serif;
+  --body-font: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+}
+p {
+  font-family: var(--body-font);
+  color: var(--body-color);
+}
+.App {
+  min-height: 100vh;
+  background-color: rgb(210, 216, 219);
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5rem;
+}
+.content {
+  background-color: white;
+  overflow: hidden;
+  border-radius: 0.2rem;
+}
+.heading {
+  text-align: left;
+}
+
+.text {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.image {
+  max-width: 100%;
+}
+.title {
+  font-size: 1.2rem;
+}
+.date {
+  font-size: 1rem;
+  font-weight: 100;
+  opacity: 0.6;
+}
+.likeButton {
+  font-size: 1.5em;
+  border: none;
+  padding: 0.3rem;
+  background: none;
+
+  transition: all 0.3s ease-in-out;
+}
+.likeButton:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.displayInLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
