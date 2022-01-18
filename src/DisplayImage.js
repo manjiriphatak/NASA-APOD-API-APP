@@ -21,7 +21,13 @@ export default function DisplayImage() {
   if (data.ready) {
     return (
       <div className="content">
-        <img src={data.image} alt={data.title} className="image" />
+        <a
+          href="https://apod.nasa.gov/apod/image/2201/OrionCross_LucyH_7441.jpg"
+          target="_blank"
+        >
+          {" "}
+          <img src={data.image} alt={data.title} className="image" />
+        </a>
         <div className="text">
           <div className="displayInLine">
             <h3 className="date">{data.date}</h3>
@@ -35,7 +41,7 @@ export default function DisplayImage() {
     );
   } else {
     const apiKey = "G99EwI382vfUipXDiZLbTkdYDsZW9hAKISRgbnbt";
-    const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&start_date=2017-07-08&end_date=2017-07-10`;
+    const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
     axios.get(apiUrl).then(getImage);
     return (
       <div>

@@ -20,9 +20,11 @@ p {
   font-family: var(--body-font);
   color: var(--body-color);
 }
+html {
+  background-color: rgba(229, 234, 236, 0.541);
+}
 .App {
   min-height: 100vh;
-  background-color: rgb(210, 216, 219);
   padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
@@ -31,11 +33,15 @@ p {
 }
 .content {
   background-color: white;
+  box-shadow: 0px 0px 30px rgba(185, 188, 189, 0.767);
   overflow: hidden;
   border-radius: 0.2rem;
 }
 .heading {
   text-align: left;
+}
+.heading h1 {
+  margin-bottom: 0.5rem;
 }
 
 .text {
@@ -44,8 +50,13 @@ p {
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .image {
   max-width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.image:hover {
+  transform: scale(1.05);
 }
 .title {
   font-size: 1.2rem;
@@ -72,4 +83,31 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  background-color: rgba(128, 128, 128, 0.418);
+}
+footer p {
+  color: rgba(0, 0, 0, 0.623);
+}
+footer a {
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+footer a:hover {
+  color: white;
+  cursor: pointer;
+}
+/* Media Queries */
+
+@media (min-width: 1200px) {
+  .App {
+    margin: 0 auto;
+    max-width: 70%;
+  }
 }
