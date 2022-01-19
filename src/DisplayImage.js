@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import LikeDislike from "./LikeDislike";
 
-import PropagateLoader from "react-spinners/PropagateLoader";
+import ClipLoader from "react-spinners/ClipLoader";
 
 export default function DisplayImage() {
   const [data, setData] = useState({ ready: false });
@@ -24,6 +24,7 @@ export default function DisplayImage() {
         <a
           href="https://apod.nasa.gov/apod/image/2201/OrionCross_LucyH_7441.jpg"
           target="_blank"
+          rel="noreferrer"
         >
           {" "}
           <img src={data.image} alt={data.title} className="image" />
@@ -44,8 +45,8 @@ export default function DisplayImage() {
     const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
     axios.get(apiUrl).then(getImage);
     return (
-      <div>
-        <PropagateLoader size={20} color={"#1576D1"} className="loader" />
+      <div className="loader">
+        <ClipLoader size={100} color={" rgb(20, 32, 102)"} />
       </div>
     );
   }

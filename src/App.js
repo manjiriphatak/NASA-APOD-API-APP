@@ -16,10 +16,22 @@ function App() {
       <footer>
         <p>
           Responsive App built by{" "}
-          <a href="https://www.linkedin.com/in/manjiriphatak/">
+          <a
+            href="https://www.linkedin.com/in/manjiriphatak/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Manjiri Phatak
           </a>{" "}
-          Open-sourced on <a href="">Github</a> hosted on Netlify
+          Open-sourced on{" "}
+          <a
+            href="https://github.com/manjiriphatak/NASA-APOD-API-APP"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>{" "}
+          hosted on Netlify
         </p>
       </footer>
     </div>
