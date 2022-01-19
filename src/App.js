@@ -39,8 +39,3 @@ function App() {
 }
 
 export default App;
-//get current date
-//pass current date in apiUrl for search
-//display details- title, explaination and picture
-//add like unlike feature.
-//update style.css
