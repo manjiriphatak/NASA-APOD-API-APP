@@ -21,11 +21,7 @@ export default function DisplayImage() {
   if (data.ready) {
     return (
       <div className="content">
-        <a
-          href="https://apod.nasa.gov/apod/image/2201/OrionCross_LucyH_7441.jpg"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={data.hdurl} target="_blank" rel="noreferrer">
           {" "}
           <img src={data.image} alt={data.title} className="image" />
         </a>
