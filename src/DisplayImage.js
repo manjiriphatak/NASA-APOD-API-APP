@@ -21,7 +21,7 @@ export default function DisplayImage() {
   if (data.ready) {
     return (
       <div className="content">
-        <a href={data.hdurl} target="_blank" rel="noreferrer">
+        <a href={data.image} target="_blank" rel="noreferrer">
           {" "}
           <img src={data.image} alt={data.title} className="image" />
         </a>
